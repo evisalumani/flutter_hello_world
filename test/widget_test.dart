@@ -12,7 +12,7 @@ import 'package:hello_world_example/main.dart';
 
 void main() {
   testWidgets('App title test', (WidgetTester tester) async {
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(MyAwesomeApp());
 
     final appTitle = find.text('Tutorial app');
     expect(appTitle, findsOneWidget);
@@ -22,7 +22,7 @@ void main() {
 
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(MyAwesomeApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
